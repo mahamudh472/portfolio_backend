@@ -1,0 +1,10 @@
+{
+  "connectTitle": "Let us build something dependable.",
+  "connectDescription": "Dinajpur, Bangladesh. Reach out for backend engineering roles, Django/FastAPI projects, and API-focused development work.",
+  "socialLinks": [
+    { "label": "Email", "href": "mailto:mahadymahamudh472@gmail.com", "icon": "EM" },
+    { "label": "GitHub", "href": "https://github.com/mahamudh472", "icon": "GH" },
+    { "label": "LinkedIn", "href": "https://linkedin.com/in/mahamudh471", "icon": "LI" },
+    { "label": "Phone", "href": "tel:+8801926615570", "icon": "PH" }
+  ]
+}

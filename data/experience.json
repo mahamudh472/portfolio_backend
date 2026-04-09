@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "company": "JoinVenture AI",
+    "role": "Backend Developer",
+    "duration": "Oct 2025 - Present",
+    "summary": "Building AI-powered product features, scalable asynchronous task systems, and performance improvements for large-scale user applications."
+  },
+  {
+    "id": 2,
+    "company": "Freelance and Team Projects",
+    "role": "Django Developer",
+    "duration": "Feb 2023 - Oct 2025",
+    "summary": "Delivered 5+ full-stack Django applications with REST APIs, implemented complex pricing and business logic, and shipped 3 client projects with reduced revision cycles."
+  },
+  {
+    "id": 3,
+    "type": "education",
+    "company": "Dinajpur Polytechnic Institute",
+    "role": "Diploma in Computer Science and Technology",
+    "duration": "Feb 2021 - Expected 2026",
+    "summary": "Academic foundation in data structures, database management, operating systems, networking, and algorithm analysis with active practical problem solving."
+  }
+]

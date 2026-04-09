@@ -1,0 +1,30 @@
+{
+  "introParagraphs": [
+    "I am a dedicated Python and Django developer with 4+ years of experience building scalable web applications and backend services. I focus on writing clean code, solving real business problems, and delivering reliable user experiences.",
+    "I have solved 300+ algorithmic problems across Codeforces, LeetCode, HackerRank, CodingGame, and CodeChef, which strengthens my analytical thinking and system-level problem solving."
+  ],
+  "approachItems": [
+    "Build scalable backend systems with practical architecture",
+    "Deliver features with strong API and business-logic quality",
+    "Continuously improve performance and development workflow",
+    "Collaborate effectively with frontend and design teams"
+  ],
+  "skillGroups": [
+    {
+      "title": "Languages",
+      "skills": ["Python", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "Frameworks",
+      "skills": ["Django", "Django REST Framework", "FastAPI", "GraphQL"]
+    },
+    {
+      "title": "Databases",
+      "skills": ["MySQL", "PostgreSQL", "SQLite"]
+    },
+    {
+      "title": "Tools",
+      "skills": ["Git", "GitHub", "Docker", "AWS", "Celery", "JWT", "Stripe", "Postman"]
+    }
+  ]
+}

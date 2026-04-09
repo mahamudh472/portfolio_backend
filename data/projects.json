@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "IT Certification Website",
+    "description": "Developed an e-commerce style certification platform with guest-to-user cart merging, profile history, Stripe payments, and intelligent search suggestions.",
+    "techStack": ["Python", "Django", "Bootstrap", "JavaScript", "Stripe"],
+    "github": "https://github.com/mahamudh472"
+  },
+  {
+    "id": 2,
+    "title": "Medical Test",
+    "description": "Built a medical testing service workflow with dynamic cart updates, voucher redemption, geolocation-based service center filtering, and advanced search.",
+    "techStack": ["Python", "Django", "Bootstrap", "JavaScript", "AJAX"],
+    "github": "https://github.com/mahamudh472"
+  },
+  {
+    "id": 3,
+    "title": "GlucoGuide",
+    "description": "Created a health monitoring platform with 2FA authentication, daily health tracking, and a machine learning model to estimate diabetes risk percentage.",
+    "techStack": ["Python", "Django", "Pandas", "Scikit-learn", "SQLite"],
+    "github": "https://github.com/mahamudh472"
+  },
+  {
+    "id": 4,
+    "title": "Sharjah Mawsalat",
+    "description": "Built a UAE bus transportation app with route visualization, stop and fare details, and location-based route planning on interactive maps.",
+    "techStack": ["Python", "Django", "JavaScript", "OpenStreetMap", "SQLite"],
+    "github": "https://github.com/mahamudh472"
+  },
+  {
+    "id": 5,
+    "title": "BizNews",
+    "description": "Developed a content platform with CKEditor5, CRUD workflows, search, category filtering, comment system, and user authentication.",
+    "techStack": ["Python", "Django", "CKEditor5", "JavaScript", "Bootstrap"],
+    "github": "https://github.com/mahamudh472"
+  },
+  {
+    "id": 6,
+    "title": "Upstore",
+    "description": "Implemented product browsing, filtering, secure authentication, checkout flow, and order management for an online store.",
+    "techStack": ["Python", "Django", "JavaScript", "HTML/CSS", "SQLite"],
+    "github": "https://github.com/mahamudh472"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "slug": "scaling-django-task-queues-with-celery",
+    "title": "Scaling Django Task Queues With Celery",
+    "excerpt": "How I structure async jobs, retries, and monitoring for stable background processing.",
+    "coverImage": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=1400&q=80",
+    "tags": ["Django", "Celery", "Redis", "Backend"],
+    "publishedAt": "2026-03-10",
+    "readingTime": "7 min read",
+    "content": "# Scaling Django Task Queues With Celery\n\nBackground jobs look simple in local development, but production traffic can quickly expose retry storms and visibility gaps. This write-up documents a pattern I use to keep queues predictable.\n\n## Queue Design\n\n- Split work by domain, not by random priority labels\n- Keep tasks idempotent so safe retry is possible\n- Track failures with meaningful context\n\n```python\nfrom celery import shared_task\n\n@shared_task(bind=True, autoretry_for=(Exception,), retry_backoff=True, max_retries=5)\ndef send_digest_email(self, user_id):\n    # Idempotent operation: regenerate payload each execution\n    user = User.objects.get(id=user_id)\n    payload = build_digest_payload(user)\n    email_service.send(user.email, payload)\n```\n\n## Operational Notes\n\nThe key is observing queue depth, retry rates, and task execution duration as first-class metrics. If any one metric is ignored, incidents become hard to diagnose.\n\n![Task queue dashboard](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80)\n\n## Result\n\nThis setup reduced failed task incidents and made backlog recovery much faster during peak usage windows."
+  },
+  {
+    "id": 2,
+    "slug": "designing-clean-drf-apis-for-growth",
+    "title": "Designing Clean DRF APIs For Product Growth",
+    "excerpt": "A practical API design style that keeps endpoints stable while product requirements evolve.",
+    "coverImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
+    "tags": ["Django REST Framework", "API", "Architecture"],
+    "publishedAt": "2026-02-19",
+    "readingTime": "6 min read",
+    "content": "# Designing Clean DRF APIs For Product Growth\n\nWhen feature pressure is high, APIs can become inconsistent quickly. I prefer contract-first endpoint design with explicit serializers and a strict error format.\n\n## Serializer-Driven Responses\n\n```python\nclass ProjectSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Project\n        fields = [\"id\", \"name\", \"status\", \"updated_at\"]\n```\n\n## Why This Helps\n\n- Frontend teams can rely on stable response shapes\n- Validation rules stay close to transport boundaries\n- Refactoring internals does not break clients\n\n![API flow design](https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=1200&q=80)\n\nConsistent API contracts reduce integration friction and speed up releases."
+  },
+  {
+    "id": 3,
+    "slug": "practical-fastapi-patterns-for-production",
+    "title": "Practical FastAPI Patterns For Production",
+    "excerpt": "Dependency boundaries, request validation, and deployment tips I use in real projects.",
+    "coverImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80",
+    "tags": ["FastAPI", "Python", "DevOps"],
+    "publishedAt": "2026-01-28",
+    "readingTime": "5 min read",
+    "content": "# Practical FastAPI Patterns For Production\n\nFastAPI is great for speed, but good structure still matters. Keep your modules explicit and avoid putting business logic directly in route handlers.\n\n## Route Layer\n\n```python\n@router.post(\"/orders\", response_model=OrderResponse)\nasync def create_order(payload: CreateOrderRequest, service: OrderService = Depends(get_order_service)):\n    return await service.create(payload)\n```\n\n## Service Layer\n\nThe service layer owns workflows and invariants. The route layer should only translate HTTP concerns.\n\n![FastAPI architecture](https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1200&q=80)\n\nThis pattern keeps endpoints testable and makes future changes less risky."
+  }
+]

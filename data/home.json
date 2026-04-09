@@ -1,0 +1,38 @@
+{
+  "roleLabel": "Backend Developer",
+  "name": "Md. Mahmud Hasan",
+  "intro": "Dedicated Python and Django Developer focused on building efficient, scalable, and user-centric applications with clean code and measurable product impact.",
+  "typingSkills": [
+    "Django APIs",
+    "FastAPI Services",
+    "GraphQL Integrations",
+    "Asynchronous Task Processing"
+  ],
+  "highlightStats": [
+    { "label": "Experience", "value": "4+ Years" },
+    { "label": "Problems Solved", "value": "300+" },
+    { "label": "Django Apps", "value": "5+" }
+  ],
+  "coreFocus": [
+    "API Design and Contract-First Development",
+    "Database Modeling and Query Optimization",
+    "Dockerized Environments and Linux Workflow",
+    "Monitoring, Logging, and Production Stability"
+  ],
+  "openToWorkTitle": "Open to Work",
+  "openToWorkDescription": "Available for backend development, Django projects, API integration, and performance optimization.",
+  "expertiseCards": [
+    {
+      "title": "Production Django Development",
+      "description": "Building scalable Django and DRF applications with clean architecture and maintainable backend logic."
+    },
+    {
+      "title": "API and Data Systems",
+      "description": "Designing API contracts, implementing robust business rules, and optimizing relational database performance."
+    },
+    {
+      "title": "Asynchronous and Cloud Workflows",
+      "description": "Implementing task queues, cloud-backed deployments, and resilient backend services for real-world scale."
+    }
+  ]
+}

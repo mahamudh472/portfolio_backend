@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Backend Architecture Board",
+    "category": "System Design",
+    "description": "High-level service boundary sketch for a modular backend stack.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 2,
+    "title": "API Testing Session",
+    "category": "Development",
+    "description": "Endpoint validation and integration testing workflow in Postman.",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Celery Monitoring View",
+    "category": "DevOps",
+    "description": "Monitoring worker queue health, retries, and throughput patterns.",
+    "image": "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Deployment Checklist",
+    "category": "Release",
+    "description": "Production release checklist before shipping critical backend features.",
+    "image": "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Database Optimization Notes",
+    "category": "Database",
+    "description": "Indexing and query profiling notes collected during performance tuning.",
+    "image": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "id": 6,
+    "title": "Code Review Deep Dive",
+    "category": "Engineering",
+    "description": "Reviewing module design and long-term maintainability of service code.",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
+  }
+]
