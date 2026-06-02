@@ -4,7 +4,8 @@ from pathlib import Path
 
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
-from django.db import transaction
+from django.core.management.color import no_style
+from django.db import connection, transaction
 
 from main.models import BlogPost, Experience, GalleryItem, Project, SiteSectionContent
 
@@ -45,6 +46,14 @@ class Command(BaseCommand):
             blog_count = self._import_blogs(blogs)
             gallery_count = self._import_gallery(gallery_items)
             section_count = self._import_sections(home_section, about_section, contact_section)
+
+            # Reset database sequences for auto-increment columns to keep PostgreSQL in sync with manual IDs.
+            sequence_sql = connection.ops.sequence_reset_sql(
+                no_style(), [Project, Experience, BlogPost, GalleryItem]
+            )
+            with connection.cursor() as cursor:
+                for sql in sequence_sql:
+                    cursor.execute(sql)
 
         self.stdout.write(self.style.SUCCESS("Portfolio data import completed."))
         self.stdout.write(
